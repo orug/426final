@@ -1,0 +1,21 @@
+#main-box{
+    height: 600px;
+    width: 600px;
+    border: thin solid black;  
+    
+}
+
+#login_options{
+    
+}
+
+#username{
+   width: 100px; height: 20px
+
+    
+}
+
+#password{
+    width: 100px; height: 20px
+    
+}

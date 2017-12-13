@@ -1,21 +1,50 @@
 #main-box{
-    height: 600px;
-    width: 600px;
-    border: thin solid black;  
+    height: 500px;
+    width: 400px;
+    border: thin solid black; 
+    
     
 }
+
+
+input[type=text] {
+    margin-right: 5px;
+    float: right;
+    width: 100px;
+    margin-top: 8px;
+    
+}
+
 
 #login_options{
     
 }
 
 #username{
-   width: 100px; height: 20px
+    width: 100px; height: 20px;
+    
+ 
 
     
 }
 
 #password{
-    width: 100px; height: 20px
+    width: 100px; height: 20px;
+    margin-right: 5px;
+    float: right;    
+    margin-top: 8px;
     
 }
+
+#logout {
+}
+
+#submit {
+    
+}
+
+body {
+    font: 15px arial, sans-serif;
+    line-height: 200%;
+}
+

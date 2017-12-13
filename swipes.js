@@ -9,7 +9,9 @@ $(document).ready( function() {
     
 
     
-    $('#main-box').hide();        
+    $('#main-box').hide();
+   // $('#logout').hide();
+
 
          //if radio buttons change
     $('#login_options').change(function(){ 
@@ -19,7 +21,8 @@ $(document).ready( function() {
             
             
             if (selectedValue == 'create') {
-                $('#create-specific').show();            }
+                $('#create-specific').show();           
+            }
             
             else if (selectedValue === 'login') {
                 $('#create-specific').hide();
@@ -60,7 +63,7 @@ $(document).ready( function() {
                     alert(data);
                     $("p").text(data);
                     userProfile(first_name, email, swipes);
-
+                   
                 }
             });
         };
@@ -80,6 +83,8 @@ $(document).ready( function() {
                     try{
                         var userInfo = JSON.parse(data);
                         userProfile(userInfo.first_name, userInfo.email, userInfo.swipes);
+                       // $('#logout').show();
+     
                     }
                     catch (err) {
                         alert(err);
@@ -95,6 +100,8 @@ $(document).ready( function() {
     
     function userProfile(first_name, email, swipes) {
         var updateSwipesButton = '<br><button type="button" id="update-swipes">Update Number of Swipes</button>';
+        var viewSwipes = '<br><button type="button" id="view-swipes">View All Swipes Records</button>';
+        var logoutButton = '<br><button type="button" id="logout">Logout</button>'
         var welcomeMessage = 'Welcome ' + first_name;
         var emailMessage = 'Email Address: ' + email;
         var swipesMessage = 'Number of Swipes up for Grabs: ' + swipes;
@@ -107,10 +114,28 @@ $(document).ready( function() {
         $('#main-box').append('<br>');
         $('#main-box').append(swipesMessage);        
         $('#main-box').append(updateSwipesButton);  
+        $('#main-box').append(viewSwipes);  
+        $('#main-box').append(logoutButton);
+
+        
+        
+        
         
         $("#update-swipes").click(function(){
                 userProfile(first_name, email, updateSwipes());
         });
+        
+        
+        $("#view-swipes").click(function(){
+             window.open('table.php');
+        });
+        
+        
+        
+        $('#logout').click(function() {
+            location.reload();       
+        
+        })
     }
         
     
@@ -129,6 +154,8 @@ $(document).ready( function() {
  
     }
 
+    
+    
 });
     
     

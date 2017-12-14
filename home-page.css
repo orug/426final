@@ -1,50 +1,81 @@
-#main-box{
-    height: 500px;
+#main-box{ 
     width: 400px;
-    border: thin solid black; 
-    
-    
+    height: 250px;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -250px;
+    background-color:white;
+	opacity:0.85;
+	color:black;
+    text-align: center;
+
 }
 
+button {
+    float:center;
+}
 
-input[type=text] {
-    margin-right: 5px;
-    float: right;
-    width: 100px;
-    margin-top: 8px;
-    
+#create-specific{
+    margin-right: 10px;
+	align-content:center;	
+}
+
+h1{	
+	text-align:center;
+	color:black;
+    background-color: white;
+    opacity: 0.85;
+}
+p{
+    width: 500px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -250px;
+	text-align:center;
+	background-color:white;
+	opacity:0.85;
+	color:black;
+}
+
+table{
+    width: 500px;
+    height: 400px;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -250px;
+	text-align:center;
+	opacity:0.85;
+	background-color:white;
+	color:black;
+	
 }
 
 
 #login_options{
-    
+    top: 60%;
+    left: 35%;
+	font-weight:Bold;
+	font-size:190%;
+    background-color: white;
+    opacity: .85;
+    text-align: center;
 }
 
-#username{
-    width: 100px; height: 20px;
-    
- 
-
-    
-}
-
-#password{
-    width: 100px; height: 20px;
-    margin-right: 5px;
-    float: right;    
-    margin-top: 8px;
-    
-}
-
-#logout {
-}
-
-#submit {
-    
-}
 
 body {
     font: 15px arial, sans-serif;
     line-height: 200%;
+    background-image: url("http://global.unc.edu/files/2013/03/Old_Well_summer_2015__010.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
 }
+
 

@@ -6565,7 +6565,7 @@ jQuery.each( [ "height", "width" ], function( i, name ) {
 					elem,
 					name,
 					extra,
-					jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
+					jQuery.css( elem, "", false, styles ) === "border-box",
 					styles
 				);
 

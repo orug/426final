@@ -30,6 +30,9 @@ if (mysqli_num_rows($check_username) == 0) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    
+    $sql2 = "INSERT INTO users (username, password) VALUES ('$newUser', '$newPassword')";
+    $conn->query($sql2);
 
     }
 else { print 'Choose a different username';}
